@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "arena",
+  "description": "La skill Arena para Claude Code, en español",
+  "owner": {
+    "name": "Aldush Media",
+    "url": "https://github.com/aldushmedia"
+  },
+  "plugins": [
+    {
+      "name": "arena",
+      "description": "Lanza 100 subagentes con la misma tarea exacta, cada uno con una carta de estrategia distinta, y los pasa por un torneo de ataque, defensa y juicio hasta que sobrevive una sola respuesta.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/aldushmedia/arena"
+    }
+  ]
+}
