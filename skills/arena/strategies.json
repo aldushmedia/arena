@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "about": "Las cartas de estrategia de /arena. Cada competidor recibe la misma tarea y exactamente una carta: un modo de razonamiento, un flujo de trabajo y una estrategia. 15 x 12 x 12 = 2.160 cartas distintas. bracket.py las reparte sin repetir y en partes iguales, así que una arena de 100 agentes usa cada modo de razonamiento, cada flujo de trabajo y cada estrategia. Edítalo con libertad: agrega una entrada y el repartidor la toma. Los id tienen que ser únicos dentro de cada lista.",
+  "reasoning": [
+    {
+      "id": "first-principles",
+      "name": "Primeros principios",
+      "how": "Reduce la tarea a los hechos y requisitos que nadie puede discutir. Reconstruye la respuesta solo a partir de ellos, y quédate con una convención solo si vuelve a ganarse su lugar."
+    },
+    {
+      "id": "inversion",
+      "name": "Inversión",
+      "how": "Pregúntate qué haría fallar esta respuesta. Haz la lista de cada forma en que podría fallar y luego construye la respuesta que hace imposible cada una de esas fallas."
+    },
+    {
+      "id": "analogy",
+      "name": "Analogía",
+      "how": "Busca un problema de otro campo que ya esté resuelto y tenga la misma forma. Trae su solución y luego corrige cada lugar donde la analogía no se sostiene."
+    },
+    {
+      "id": "adversarial",
+      "name": "Adversario",
+      "how": "Imagina al revisor experto más duro intentando destrozar la respuesta. Escribe primero sus ataques y construye la respuesta de atrás hacia adelante a partir de ellos."
+    },
+    {
+      "id": "constraint-first",
+      "name": "Restricciones primero",
+      "how": "Haz la lista de cada restricción dura, dicha e implícita: tiempo, presupuesto, herramientas, formato, público, plataforma. Resuelve estrictamente dentro de esa caja y deja que la restricción más ajustada guíe el diseño."
+    },
+    {
+      "id": "worked-example",
+      "name": "Ejemplo resuelto",
+      "how": "Resuelve primero un caso concreto y realista de principio a fin, con valores reales. Generaliza solo a partir de lo que ese ejemplo de verdad te enseñó."
+    },
+    {
+      "id": "socratic",
+      "name": "Socrático",
+      "how": "Interroga la tarea con las preguntas que haría un experto agudo antes de empezar. Responde cada una de forma explícita y deja que las respuestas decidan la forma de la solución."
+    },
+    {
+      "id": "contrarian",
+      "name": "Llevar la contraria",
+      "how": "Escribe la respuesta obvia por defecto y luego argumenta en serio en su contra. Quédate solo con lo que sobrevive al argumento, aunque eso te lleve por el camino impopular."
+    },
+    {
+      "id": "systems-thinking",
+      "name": "Pensamiento sistémico",
+      "how": "Mapea las piezas que se mueven, cómo se afectan entre sí y qué pasa en segundo y tercer orden. Optimiza el sistema completo, no solo la parte que señala la tarea."
+    },
+    {
+      "id": "decomposition",
+      "name": "Descomposición",
+      "how": "Divide la tarea en subproblemas independientes. Resuelve cada uno por completo, luego intégralos y prueba las uniones donde se encuentran."
+    },
+    {
+      "id": "working-backwards",
+      "name": "De atrás hacia adelante",
+      "how": "Describe con precisión el resultado terminado, como si ya existiera. Luego trabaja hacia atrás, paso a paso, hasta donde está el usuario ahora."
+    },
+    {
+      "id": "probabilistic",
+      "name": "Probabilístico",
+      "how": "Trata cada afirmación y cada decisión como incierta. Pondera lo probable, prefiere lo que se sostiene en la mayoría de los escenarios y di tu nivel de confianza donde cambia la decisión."
+    },
+    {
+      "id": "dialectical",
+      "name": "Dialéctico",
+      "how": "Plantea la versión más fuerte de una respuesta, luego la respuesta opuesta más fuerte, y luego escribe la síntesis que conserva lo que es cierto en ambas."
+    },
+    {
+      "id": "evidence-first",
+      "name": "Evidencia primero",
+      "how": "Apoya cada afirmación en algo verificable: el texto de la tarea, los archivos que indica, los números dados, la documentación. Lo que no puedas verificar se marca como supuesto."
+    },
+    {
+      "id": "expert-panel",
+      "name": "Panel de expertos",
+      "how": "Responde la tarea como lo harían tres expertos distintos, con roles que le queden a la tarea. Toma la idea más fuerte de cada uno y resuelve cada punto en el que no estén de acuerdo."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "draft-critique-rewrite",
+      "name": "Borrador, crítica, reescritura",
+      "how": "Escribe un primer borrador completo. Critícalo línea por línea contra la tarea como si lo hubiera escrito otra persona. Luego reescríbelo desde cero usando la crítica."
+    },
+    {
+      "id": "outline-first",
+      "name": "Esquema primero",
+      "how": "Escribe un esquema, revísalo contra cada requisito de la tarea, corrígelo, y solo entonces complétalo."
+    },
+    {
+      "id": "test-first",
+      "name": "Pruebas primero",
+      "how": "Antes de escribir la respuesta, escribe las verificaciones que tiene que pasar: pruebas de aceptación para código, criterios de aprobado o reprobado para todo lo demás. Luego escribe la respuesta y pásale cada verificación."
+    },
+    {
+      "id": "research-then-synthesise",
+      "name": "Investigar y luego sintetizar",
+      "how": "Reúne primero cada dato relevante: la tarea, los archivos o el contexto que indica, lo que se sabe del tema. No escribas nada hasta terminar la investigación, y luego sintetiza."
+    },
+    {
+      "id": "three-drafts",
+      "name": "Tres borradores, elige uno",
+      "how": "Escribe tres enfoques cortos y realmente distintos. Elige el más fuerte según los términos de la propia tarea y desarrolla por completo solo ese."
+    },
+    {
+      "id": "requirements-checklist",
+      "name": "Lista de requisitos",
+      "how": "Saca cada requisito de la tarea a una lista numerada. Resuelve, y luego marca cada punto y di exactamente dónde se cumple."
+    },
+    {
+      "id": "iterative-deepening",
+      "name": "Profundización por pasadas",
+      "how": "Escribe primero una respuesta de un párrafo. Luego amplía las partes que más importan en dos pasadas más, cada una más profunda que la anterior."
+    },
+    {
+      "id": "build-then-break",
+      "name": "Construir y luego romper",
+      "how": "Construye la respuesta. Luego lánzale cinco entradas o escenarios hostiles, anota lo que se rompe y repara cada rotura."
+    },
+    {
+      "id": "smallest-version-first",
+      "name": "La versión más pequeña primero",
+      "how": "Haz la versión completa más pequeña que de verdad funcione. Luego amplíala paso a paso, y que siga funcionando después de cada paso."
+    },
+    {
+      "id": "options-matrix",
+      "name": "Matriz de opciones",
+      "how": "Haz la lista de las opciones realistas, puntúalas en una matriz pequeña con los criterios que importan para esta tarea, elige una y explica la elección."
+    },
+    {
+      "id": "open-questions-first",
+      "name": "Preguntas abiertas primero",
+      "how": "Haz la lista de cada pregunta abierta que deja la tarea. Resuelve cada una con razonamiento o con un supuesto explícito, y luego responde."
+    },
+    {
+      "id": "write-then-restructure",
+      "name": "Escribir y luego reestructurar",
+      "how": "Escribe libre y rápido. Luego haz el esquema de lo que realmente escribiste, corrige la estructura y reescríbelo con el esquema nuevo."
+    }
+  ],
+  "strategies": [
+    {
+      "id": "simplest",
+      "name": "Lo más simple que funcione",
+      "how": "Elige la respuesta menos complicada que haga el trabajo por completo. Cada parte extra tiene que justificarse."
+    },
+    {
+      "id": "maximal-rigour",
+      "name": "Rigor máximo",
+      "how": "Sé exhaustivo y exacto. Revisa cada paso, verifica cada afirmación y no dejes nada a medias en ningún lado."
+    },
+    {
+      "id": "user-empathy",
+      "name": "Empatía con el usuario primero",
+      "how": "Empieza por la persona que va a usar esto: su situación, su nivel y lo que de verdad va a hacer después. Dale forma a todo alrededor de eso."
+    },
+    {
+      "id": "edge-cases-first",
+      "name": "Casos límite primero",
+      "how": "Busca primero los casos límite, las formas de fallar y las entradas raras, y diseña la respuesta para sobrevivirlos."
+    },
+    {
+      "id": "speed",
+      "name": "Velocidad",
+      "how": "Optimiza para el camino más rápido a algo usable hoy. Recorta todo lo que no mueva el resultado."
+    },
+    {
+      "id": "defensive",
+      "name": "Defensiva",
+      "how": "Supón que las entradas son malas y las condiciones hostiles. Haz que la respuesta falle de forma segura y visible, no en silencio."
+    },
+    {
+      "id": "clarity",
+      "name": "Claridad ante todo",
+      "how": "Haz que sea la respuesta más fácil de leer y de usar: palabras simples, estructura obvia, nada que el lector tenga que descifrar."
+    },
+    {
+      "id": "completeness",
+      "name": "Completitud",
+      "how": "No dejes fuera nada que la tarea pida o dé a entender con claridad. Cubre cada requisito de forma explícita."
+    },
+    {
+      "id": "fewest-moving-parts",
+      "name": "La menor cantidad de piezas",
+      "how": "Quita cosas hasta que se rompa, y luego devuelve la última. Menos pasos, menos dependencias, menos palabras."
+    },
+    {
+      "id": "explicit-trade-offs",
+      "name": "Compensaciones explícitas",
+      "how": "Nombra las compensaciones reales, elige según las restricciones más probables del usuario y di claramente a qué renuncia esa elección."
+    },
+    {
+      "id": "built-to-last",
+      "name": "Hecho para durar",
+      "how": "Optimiza para cómo va a resistir en seis meses: fácil de mantener, fácil de ampliar, sin trampas para la próxima persona."
+    },
+    {
+      "id": "concrete-specifics",
+      "name": "Detalles concretos",
+      "how": "Números, nombres, comandos, rutas de archivos y pasos exactos. Cero consejos genéricos."
+    }
+  ]
+}

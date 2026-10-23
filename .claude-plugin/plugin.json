@@ -1,0 +1,21 @@
+{
+  "name": "arena",
+  "description": "Cuando Claude te sigue dando malas respuestas, pon a 100 versiones suyas a pelear a muerte. La misma tarea, 100 estrategias distintas, un torneo y una sola respuesta al final. Skill gratis para Claude Code.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Aldush Media",
+    "url": "https://github.com/aldushmedia"
+  },
+  "homepage": "https://github.com/aldushmedia/arena",
+  "repository": "https://github.com/aldushmedia/arena",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "subagents",
+    "multi-agent",
+    "tournament",
+    "arena",
+    "prompting",
+    "espanol"
+  ]
+}
